@@ -1,0 +1,593 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    width:100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    width:100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+.section3 hr,.section4 hr,.section5 hr{
+        background-color:green;
+        width:100px;
+        height: 3px;
+        margin:5px auto 0;
+        border: none;
+}
+/* section 1 home */
+.section1{
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(238, 232, 232, 0.33),rgb(168, 164, 164)) ;
+    /* background-image:linear-gradient(rgb(226, 202, 202),rgb(139, 103, 103)) ; */
+  
+
+}
+/* start navbar */
+.nav{
+    background-color: rgba(176, 235, 244, 0.81) ;
+    /* background-color: rgb(235, 221, 221) ; */
+    color: rgb(78, 78, 124);
+    width:100%;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   z-index: 1;
+}
+.nav ul{
+    display: flex;
+    gap:20px;
+}
+.nav ul li a{
+   color:  rgb(78, 78, 124);
+   font-size:20px;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+.nav ul li a:hover{
+    color:red;
+    font-size: 25px;
+    font-weight: 900;
+   border-bottom: dashed black;
+}
+.nav p{
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-shadow: 0 0 4px rgb(116, 109, 136);
+
+}
+/* end navbar */
+
+/* start content  */
+.content{
+    width:100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* pargraph */
+.content .pargraph p .hi{
+    color: rgb(6, 87, 17);
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    padding:0 0 10px 0;
+    
+}
+.content .pargraph p .myname{
+    color: rgb(31, 33, 41);
+    font-size: 25px;
+    font-weight: 900;
+    display: block;
+    padding:0 0 10px 0;
+   
+}
+.content .pargraph p .job{
+    color: rgb(31, 33, 41);
+    font-size: large;
+    font-weight: 500;
+    display: inline-block;
+    padding:0 0 10px 0;
+}   
+ /*links  */
+.section1 .content ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start ;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+  
+   
+   
+ }
+ 
+.content li{
+width: 30px;
+opacity: 0.6;
+ }
+ 
+.content li:hover{
+width: 40px;
+opacity: 1;
+ }
+/* image */
+
+.section1 .image img{
+    width:300px;
+   border-radius: 30px;
+   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+ 
+
+}
+/* section 2 about me */
+.section2{
+    height:100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(238, 232, 232, 0.33),rgb(168, 164, 164)) ;
+
+    /* background-image:linear-gradient(rgb(226, 202, 202),rgb(139, 103, 103)); */
+    display:flex ;
+    flex-flow: row wrap;
+    
+    justify-content:center ;
+}
+.section2 .title{
+    
+    height:20vh ;
+    width: 100%;
+  
+    display: flex;
+   
+    justify-content: center;
+    align-items:end ;
+    font-size: 40px;
+    font-weight: 900;
+    /* text-decoration: solid underline  rgb(119, 80, 80); */
+    text-transform: capitalize;
+    text-shadow: 0px 0px 20px rgb(245, 198, 198);
+   
+}
+.section2 hr{
+    background-color: rgba(139, 190, 247, 0.821);
+    width:100px;
+    height: 3px;
+    margin:5px auto 0;
+    border: none;
+}
+
+.section2 div .content{
+    height: 90vh;
+    width: 100%;
+    display: inline-flex;
+  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:center ;
+}
+.section2 div .pragraph ,.section2 div .information{
+    /* background: red; */
+    flex-basis:40%;
+   
+}
+.section2 div .pragraph  span{
+    color: rgb(45, 4, 4);
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: capitalize;
+    display: block;
+    padding:0 0 10px 0;
+}
+.section2 div .pragraph p {
+    color: rgb(31, 33, 41);
+    font-size: 15px;
+    font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+    padding:0 0 10px 0;
+    white-space: wrap;
+}
+.section2 div .information{
+    margin-top: 30px;
+}
+.section2 div .information P{
+    color: rgb(31, 33, 41);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+    padding:10px 0 10px 0;
+    /* border-bottom:solid 2px; */
+}
+.section2 div .information  img{
+    width: 70px;
+  margin:10px 50%;
+   border-radius: 30px;
+
+}
+.section2 div .information  img:hover{
+    width: 100px;
+ cursor: pointer;
+
+}
+ .section2 div .information P span{ 
+    color: rgb(45, 4, 4);
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase; 
+}
+/* section 2 end  */
+/* start section 3 */
+.section1,.section2,.section3,.section4,.section5{
+    border-bottom: 2px solid rgb(235, 220, 220);
+}
+.section3 ,.section4{
+    width: 100%;
+    height:100vh;
+    background: rgba(4, 16, 32, 0.847);
+    display: flex;
+    flex-flow:column wrap;
+    justify-content:center ;
+    /* align-items: center; */
+}
+.section3 .title_aboutme 
+,.section4 .title_portfolio{
+    width:100%;
+    height:20vh;
+    display: flex; 
+    justify-content:center ;
+    align-items: end;           
+}
+.section3 .title ,.section4 .title{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 900;
+    /* text-decoration:solid underline green; */
+}
+.icon_laptop{
+    width:35px;
+    margin: 0 10px;
+   
+}
+.section3 p span,.section4 p span{
+color: blue;
+padding-left: 3px;
+}
+.section3 .content{
+    width:70%;
+    height:60vh;
+    margin: auto;
+    /* background-color: rgba(21, 21, 21, 0.888); */
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: repeat(2,1fr) ;
+    gap: 2vh ;
+    color:aliceblue;
+    
+    
+
+}
+.section3 .content div {
+    /* background: rgba(18, 1, 1, 0.373); */
+    background: rgba(1, 1, 18, 0.842);
+
+    height:25vh;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center ;
+    align-items: center;
+}
+.section3 .content div:hover{
+    cursor:text;
+    background:rgba(4, 16, 32, 0.847);
+     /* width:calc(70vw/2);
+    height:30vh; */
+    transform: scale(1.05);
+}
+.section3 .content img{
+    width:40px;
+}
+/* section4 */
+.section4 .content{
+    width:50%;
+    height:50vh;
+    margin: auto;
+    /* background-color:  rgba(4, 16, 32, 0.177); */
+   
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: repeat(2,1fr) ;
+    gap: 3vh ;
+    color:aliceblue;
+    
+    
+
+}
+.section4 .content .avatar,.section4 .content .glass {
+    background: rgba(255, 255, 255, 0.373);
+    height:100%;
+   
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    grid-row: 1/3;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.section4 .content .avatar:hover,.section4 .content .glass:hover{
+transform: scale(1.04);
+cursor:grab;
+}
+.section4 .content .avatar .img img, .section4 .content .glass .img img{
+    width:100%;
+    height: 35vh;
+}  
+.section4 .content .avatar .img , .section4 .content .glass .img {
+    width: 100%;
+    height: 35vh;
+}
+.section4 .content .avatar .items , .section4 .content .glass .items{
+    width: 100%;
+    height: 15vh;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    background-color: rgb(255, 255, 255);
+}
+
+.section4 a{
+    color: green;
+    font-size: 15px;
+    font-weight: 400;
+}
+.section4 a:hover{
+    color: rgb(255, 5, 5);
+    font-size: 25px;
+    font-weight:700;
+    text-decoration: solid black underline;
+}
+
+/* section 5 contact */
+.section5{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(183, 211, 226, 0.564);
+
+}
+.section5 .conteiar_contant{
+    width:80%;
+    height:80vh;
+    /* background-color: blueviolet; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section5 .content{
+    width:30%;
+    height:70vh;
+    margin: auto;
+    /* background-color:  rgba(4, 16, 32, 0.177); */
+   border: 3px solid black;
+   border-radius: 10px;
+    display: flex;
+  justify-content: center;
+  align-items: space-between;
+    gap: 3vh ;
+    color:aliceblue;
+}
+.section5 .conteiar_contant .image{
+    width: 50%;
+    height: 70vh;
+    /* background-color: rgba(248, 5, 5, 0.373); */
+}
+.section5 .conteiar_contant .contact_img img{
+    width: 100%;
+    height:70vh;
+   border-radius: 30px;
+   box-shadow:0px 0px 5px 1px rgb(250, 212, 212) ;
+   
+}
+
+
+.section5 .content .form{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(248, 5, 5, 0.373); */
+    /* color: black; */
+}
+.section5 h2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+.section5 .content .form form{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+.section5 .content .form form input
+,.section5 .content .form form textarea{
+    display: block;
+  
+    width: 100%;
+    margin: 20px auto;
+    border: 3px solid  black;
+   border-radius: 30px;
+background-color: rgba(255, 255, 255, 0.725);
+    outline: none;
+  padding: 5px 20px;
+  color:rgb(0, 0, 0)
+}
+.section5 .content .form form textarea{
+   min-height: 150px;
+   max-height: 200px;
+    resize: vertical;
+}
+.section5 hr{
+    background-color: rgb(18, 83, 111);
+}
+.section5 .content .form form button{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(34, 88, 235);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+.section5 .content .form form button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    font-size: 25px;
+ 
+}
+footer{
+    height: 5vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+@media (min-width: 645px)and (max-width: 1000px) {
+    .section1 .image img{
+        width:250px;
+    }
+    .section4 .content{
+        width:80%;
+       
+    }
+    .section5 .conteiar_contant{
+        width:90%;
+        height:90vh;
+        flex-flow: column;
+    }
+    .section5 .content{
+        width:100%;
+        height: 70vh;
+      gap: 1px;
+        align-items:start;
+    }
+    .section5 .conteiar_contant .image{
+      
+       display: none;
+    
+    }
+    
+}
+@media (max-width: 645px){
+    
+.nav{
+    flex-flow: column;
+
+}
+.section1 .content{
+    flex-flow: column;
+    width:100%;
+    align-items: start;
+    justify-content: center;
+    margin: 0 0 0 40px ;
+}
+.section1 .image{
+    align-self: center;
+    margin-top: 40px;
+}
+.section1 .image img{
+    width:200px;
+}
+.section2 div .content{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-content:start ;
+   
+}
+.section2 div .pragraph
+,.section2 div .information{
+   flex-basis:70%;
+    margin:0 0 100px 20px;
+   /* background-color: blue; */
+}
+.section2 div .information  img{
+  width:0;
+}
+.section3 .content{
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: repeat(3,1fr) ;
+    gap: 1vh ;
+    height:30vh;
+}
+.section3 .content div {
+    height:15vh;
+    
+}
+.section4 .content{
+    width:80%;
+   
+}
+.section5 .conteiar_contant{
+    width:90%;
+    height:90vh;
+    flex-flow: column;
+}
+.section5 .content{
+    width:100%;
+    height: 70vh;
+  gap: 1px;
+    align-items:start;
+}
+.section5 .conteiar_contant .image{
+  
+   display: none;
+
+}
+}
+@media (max-width: 645px)
