@@ -1,2 +1,2 @@
 # portfolio
-this is my profile 
+Explore my personal portfolio showcasing my unique design and development projects. Learn about my professional background, skills.
